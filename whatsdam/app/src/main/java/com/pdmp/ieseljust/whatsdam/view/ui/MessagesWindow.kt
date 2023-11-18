@@ -67,6 +67,11 @@ class MessagesWindow : AppCompatActivity() {
             binding.MissatgesRecyclerView.adapter = it
         }
 
+        viewModel.ultimMissatge.observe(this) { ultimMissatge ->
+            binding.MissatgesRecyclerView.smoothScrollToPosition(ultimMissatge)
+        }
+
+
         // Associem un escoltador d'esdeveniments al clic sobre
         // el boto d'accio flotant per afegir un element nou a la llista
         binding.sendMessage.setOnClickListener{
@@ -79,9 +84,9 @@ class MessagesWindow : AppCompatActivity() {
 
             //Smooth scroll a l'ultim element
 
-            val index = Missatges.missatges.size - 1  //el index será el ultim element (ojo es una llista, comença per 0)
+            //val index = Missatges.missatges.size - 1  //el index será el ultim element (ojo es una llista, comença per 0)
 
-            binding.MissatgesRecyclerView.smoothScrollToPosition(index)
+           //binding.MissatgesRecyclerView.smoothScrollToPosition(index)
 
             //Netejem missatge
             binding.MessageText.text.clear()
