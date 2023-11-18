@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">whatsdam</string>
+    <string name="connectButton">Connect</string>
+    <string name="nickname">NickName</string>
+    <string name="serverAddress">Server Adress</string>
+    <string name="Connect">Connect</string>
+
+</resources>
