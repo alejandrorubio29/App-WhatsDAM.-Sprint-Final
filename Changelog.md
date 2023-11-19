@@ -37,10 +37,27 @@
 
 - Funcionalidad G: Migración a MVVM
 
-
 ### Cambiado
 
 - Funcionalidad D: Conexión al adapter y repository
+
+### Eliminado
+
+- Nada
+
+## [Versió 4.0.0] - 18/11/2023
+
+### Añadido
+
+- Funcionalidad H: Conectividad a servidor
+- Funcionalidad I: Clase Communication Manager y MissatgesAltreViewModel implementadas
+
+
+
+### Cambiado
+
+- Funcionalidad D: - Funcionalidad D: Cambios del adapter para incluir selección entre las vistas "Usuario" y "Otro usuario", enlaces con el repositorio actualizados
+- Funcionalidad E: Modificación de los mensajes como LiveData
 
 ### Eliminado
 
